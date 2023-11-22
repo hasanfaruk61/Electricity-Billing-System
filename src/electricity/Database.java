@@ -10,7 +10,7 @@ public class Database {
     Statement statement;
     Database() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Billing_system", "root", "admin");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Billing_system", "root", "password");
             statement = connection.createStatement();
         }catch (Exception e){
             e.printStackTrace();
